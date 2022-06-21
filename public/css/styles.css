@@ -1,0 +1,161 @@
+body {
+    background-color: #ebebeb;
+}
+
+header {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px; 
+    background-color: #EAC926;
+    color: black;
+}
+
+.div-logo {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.logo {
+    width: 30%;
+}
+
+.barra-busqueda {
+    padding-left:15px;
+}
+
+.boton-busqueda {
+    padding: 0px;
+}
+
+.compra-cuotas {
+    text-align: center;
+    padding-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0px;
+    display: none;
+}
+
+li a {
+    color:black;
+}
+
+.div-menu {
+    text-align: center;
+    padding-bottom: 20px; 
+    padding-top: 15px;  
+}
+
+.but-menu {
+    background-color: blue;
+    color:white;
+    border-radius: 5px;
+    padding: 6px;
+    size: 30px;
+}
+
+main {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 12px; 
+    width: 90%;
+    margin: auto;
+}
+
+section {
+    margin-top: 20px;
+    text-align: center;
+}
+
+article {
+    margin: 10px;
+    background-color: white;
+}
+
+.div-articulo {
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+}
+
+.titulares {
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    color: #666;
+}
+
+.imagen {
+    width: 100%;
+}
+
+.precios {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 5px 0;
+}
+
+
+.descripciones {
+    font-size: 16px;
+    margin-top: 15px;
+    color: #666;
+    display: none;
+}
+
+.div-camion {
+    width: 1.5em;
+    height: 1.5em;
+    color:#39b54a;
+    border: 1px #39b54a solid;
+    border-radius: 50%;
+    text-align: center;
+    padding: 3%;
+}
+
+.icono-camion {
+    size: 10em;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 20px;
+}
+
+footer section {
+    text-align:center;
+}
+
+.titulos-footer {
+    color:#666;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.textos-footer {
+    color:#666;
+    font-size: 10px;
+    text-align: center;
+}
+
+.footer-icon {
+    size: 2em;
+    margin-bottom: 10px;
+    color:  blue;
+}
+
+#copyright {
+    font-size: 8px;
+    color: #666;
+}
+
+
