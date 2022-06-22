@@ -1,5 +1,7 @@
 * {
-    box-sizing: border-box;
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
 }
     
 body {
@@ -88,7 +90,9 @@ article {
     text-align: left;
     padding: 15px;
     border-top: 1px solid #ebebeb;
+    position: relative;
 }
+
 
 .titulares {
     text-align: center;
@@ -122,7 +126,23 @@ h3 {
     display: none;
 }
 
-.div-camion {
+.datos-articulo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.precios {
+    width: 30%;
+}
+
+.descuentos {
+    width: 70%;
+}
+
+
+
+/*.div-camion {
     width: 1.5em;
     height: 1.5em;
     color:#39b54a;
@@ -133,7 +153,23 @@ h3 {
 }
 
 .icono-camion {
-    size: 10em;
+    size: 30px;
+
+}*/
+
+.icono-camion {
+    display: block ;
+    font-size: 16px ;
+    padding: 5px ;
+    width: 30px ;
+    height: 30px ;
+    border: 1px solid #39b54a ;
+    background-color: #FFF ;
+    border-radius: 50% ;
+    position: absolute ;
+    right: 20px ;
+    top: -15px ;
+    color: #39b54a;
 }
 
 footer {
