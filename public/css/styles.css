@@ -193,3 +193,38 @@ footer section {
         box-shadow : 0px 0px 10px rgb(100, 100, 100 );
     }
 }
+
+@media (min-width: 769px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .compra-cuotas {
+        font-size: 14px;
+        max-width: 350px;
+        text-align: right;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    ul li {
+        margin: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-wdth: 1200px) {
+    .main-header {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
