@@ -133,29 +133,12 @@ h3 {
 }
 
 .precios {
-    width: 30%;
+    width: 45%;
 }
 
 .descuentos {
-    width: 70%;
+    width: 55%;
 }
-
-
-
-/*.div-camion {
-    width: 1.5em;
-    height: 1.5em;
-    color:#39b54a;
-    border: 1px #39b54a solid;
-    border-radius: 50%;
-    text-align: center;
-    padding: 3%;
-}
-
-.icono-camion {
-    size: 30px;
-
-}*/
 
 .icono-camion {
     display: block ;
@@ -225,10 +208,23 @@ footer section {
         display: none;
     }
 
+    .titulares {
+        text-align: left;
+    }
+    
+    .group-articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
     article {
         box-shadow : 0px 0px 10px rgb(100, 100, 100 );
+        width: 43%;
     }
 }
+
+/* Laptop */
 
 @media (min-width: 769px) {
     .main-header {
@@ -256,7 +252,15 @@ footer section {
         margin: 10px;
         font-size: 14px;
     }
+
+    article {
+        width: 22%;
+    }
+
 }
+
+
+/* Wider laptop */
 
 @media (min-wdth: 1200px) {
     .main-header {
