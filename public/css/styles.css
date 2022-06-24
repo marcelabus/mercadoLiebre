@@ -16,26 +16,43 @@ header {
     padding: 20px 0 0 0;
 }
 
-.div-logo {
-    margin: 10px 20px;
+.logo-busqueda {
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
-    width: 40%;
+    width: 50%;
+    padding: 0 0 0 30px;
 }
 
-.barra-busqueda {
-    margin: 10px 20px;
+.form-busqueda {
+   width: 50%;
+   padding: 0 10px 0 0;
+}
+
+.input-busqueda {
+    width: 85%;
+    height: 35px;
+    border: 1px #666 solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
 }
 
 .boton-busqueda {
-    padding: 0px;
+    padding: 2px;
+    border: none;
+    background-color: white;
+    margin: -33px;
 }
 
 .compra-cuotas {
     text-align: center;
-    margin: 10px 20px;
-    font-weight: 400;
+    margin: auto;
+    padding: 20px 0 10px 0;
+    font-weight: 500;
+    color:#666;
 }
 
 nav {
@@ -49,16 +66,17 @@ nav ul {
 }
 
 li a {
-    color:black;
+    color:#666;
+    font-weight: 500;
 }
 
-.but-menu {
-    background-color: #03264C;
+.boton-menu {
+    background-color: #1259c3;
     color:white;
     display: block;
-    border-radius: 8px;
-    padding: 6px 0;
-    max-width: 30px;
+    border-radius: 5px;
+    padding: 8px 0;
+    max-width: 35px;
     text-align: center;
     margin: auto;
 }
@@ -67,7 +85,7 @@ li a {
     display: block;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
 }
 
 main {
@@ -93,7 +111,6 @@ article {
     position: relative;
 }
 
-
 .titulares {
     text-align: center;
 }
@@ -118,9 +135,9 @@ h3 {
     margin: 5px 0;
 }
 
-
 .descripciones {
     font-size: 16px;
+    font-weight: 500;
     margin-top: 15px;
     color: #666;
     display: none;
@@ -133,11 +150,11 @@ h3 {
 }
 
 .precios {
-    width: 45%;
+    width: 30%;
 }
 
 .descuentos {
-    width: 55%;
+    width: 70%;
 }
 
 .icono-camion {
@@ -184,38 +201,89 @@ footer section {
 .footer-icon {
     size: 2em;
     margin-bottom: 10px;
-    color:  blue;
+    color:  #1259c3;
 }
 
 #copyright {
     font-size: 8px;
     color: #666;
-    margin: 30px 10px;
+    margin: 30px 10px 5px;
 }
 
 /* Tablets */
 
 @media (min-width : 361px) {
-    .descripciones {
-        display: block;
+    .header-ppal {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
     }
 
+    .logo-busqueda {
+        width: 66%;
+    }
+    
+    .compra-cuotas {
+        width: 33%;
+    }
+
+    .logo {
+        padding: 0;
+    }
+
+    .form-busqueda {
+        margin: auto;
+        padding: 0;
+        text-align: right;
+    }
+
+    .input-busqueda {
+        width: 75%;
+        margin: auto;
+        height: 20px;
+    }
+
+    .boton-busqueda {
+        width: 10%;
+        height: 20px;
+        border: 1px #666 solid;
+        border-radius: 3px;
+        margin: auto;
+        padding: 0;
+    }
+
+    nav {
+        margin: 15px 20px 0;
+    }
+    
     nav ul {
         display: block;
     }
 
-    .but-menu {
+    .boton-menu {
         display: none;
     }
 
     .titulares {
         text-align: left;
     }
+
+    .precios {
+        font-size: 16px;
+    }
     
+    .descuentos {
+        font-size: 14px;
+    }
+
     .group-articles {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+    
+    .descripciones {
+        display: block;
     }
 
     article {
