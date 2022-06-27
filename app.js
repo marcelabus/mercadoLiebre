@@ -10,6 +10,9 @@ app.get ('/Home', (req,res) => {
     res.sendFile ( path.resolve (__dirname, './views/index.html'));
 });
 
+app.get ('/Crear-producto', (req,res) => {
+    res.sendFile ( path.resolve (__dirname, './views/crearProducto.html'));
+});
 
 app.listen (3000, () => {
     console.log ('Servidor levantado');
