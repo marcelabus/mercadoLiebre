@@ -64,8 +64,8 @@ header {
     text-align: center;
     margin: auto;
     padding: 20px 0 10px 0;
-    font-weight: 500;
-    color:#666;
+    font-weight: 550;
+    color:#03264C;;
 }
 
 nav {
@@ -79,8 +79,14 @@ nav ul {
 }
 
 li a {
-    color:#666;
-    font-weight: 500;
+    color:#03264C;;
+    font-weight: 550;
+    text-decoration: none;
+}
+
+li i,
+.i-manito-pesos {
+    color:#03264C;;
 }
 
 .boton-menu {
@@ -104,7 +110,6 @@ li a {
 main {
     width: 90%;
     margin: auto;
-
 }
 
 section {
@@ -115,6 +120,7 @@ section {
 article {
     margin: 10px;
     background-color: white;
+    box-shadow : 0px 0px 10px rgb(100, 100, 100 );
 }
 
 .div-articulo {
@@ -154,6 +160,7 @@ h3 {
     margin-top: 15px;
     color: #666;
     display: none;
+    opacity: 0;
 }
 
 .datos-articulo {
@@ -291,20 +298,35 @@ footer section {
         font-size: 14px;
     }
 
+    article {
+        width: 43%;
+        box-shadow: none;
+    }
+
+    article:hover {
+        box-shadow : 0px 0px 10px rgb(100, 100, 100 );
+        transition: all 0.5s;
+    }
+    
+    article:hover .descripciones {
+        display: block;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    article:hover .icono-camion {
+        transform: rotate(-90deg);
+        transition: transform 0.5s;
+    }
+
+    
+
     .group-articles {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
     
-    .descripciones {
-        display: block;
-    }
-
-    article {
-        box-shadow : 0px 0px 10px rgb(100, 100, 100 );
-        width: 43%;
-    }
 }
 
 /* Laptop */
@@ -338,6 +360,15 @@ footer section {
 
     article {
         width: 22%;
+    }
+
+    .div-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .div-footer i:hover {
+        color: #EAC926;
     }
 
 }
