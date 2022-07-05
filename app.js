@@ -4,6 +4,8 @@ const app = express();
 const path = require ('path');
 const publicPath = path.resolve (__dirname, './public');
 
+const port = process.env.PORT || 3000;
+
 app.use ( express.static (publicPath));
 
 app.get ('/home', (req,res) => {
@@ -18,6 +20,6 @@ app.get ('/login', (req,res) => {
     res.sendFile ( path.resolve (__dirname, './views/login.html'));
 });
 
-app.listen (process.env.PORT || 3000, () => {
-    console.log ('Servidor levantado en puerto 3000');
+app.listen (port, () => {
+    console.log ('Servidor levantado en puerto ' + port);
 });
